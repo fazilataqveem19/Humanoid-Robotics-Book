@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://fazilataqveem19.github.io', // Placeholder for GitHub Pages URL
+  url: 'https://your-github-pages-url.com', // Placeholder for GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Humanoid-Robotics-Book/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'fazilataqveem19', // Placeholder for GitHub organization
-  projectName: 'Humanoid-Robotics-Book', // Placeholder for GitHub repo name
+  organizationName: 'your-org', // Placeholder for GitHub organization
+  projectName: 'humanoid-robotics-book', // Placeholder for GitHub repo name
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fazilataqveem19/humanoid-robotics-book/tree/main/', // Placeholder for GitHub repo URL
+            'https://github.com/your-org/humanoid-robotics-book/tree/main/', // Placeholder for GitHub repo URL
         },
         // Blog is not required for this book, so it is removed.
         theme: {
@@ -74,7 +74,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/fazilataqveem19/humanoid-robotics-book', // Placeholder for GitHub repo URL
+          href: 'https://github.com/your-org/humanoid-robotics-book', // Placeholder for GitHub repo URL
           label: 'GitHub',
           position: 'right',
         },
@@ -114,7 +114,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/fazilataqveem19/humanoid-robotics-book', // Placeholder for GitHub repo URL
+              href: 'https://github.com/your-org/humanoid-robotics-book', // Placeholder for GitHub repo URL
             },
           ],
         },
