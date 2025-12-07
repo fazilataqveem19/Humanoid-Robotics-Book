@@ -1,40 +1,30 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import React, {type ReactNode} from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HomepageHeader(): JSX.Element {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <section className={styles.heroSection}>
+      <div className={styles.heroContent}>
+        <h1>Physical AI & Humanoid Robotics</h1>
+        <p>A comprehensive guide to physical AI, humanoid robotics, and advanced AI systems</p>
+        <Link className={styles.tutorialBadge} to="/docs/intro">
+  Docusaurus Tutorial - 5 min
+</Link>
       </div>
-    </header>
+    </section>
   );
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Physical AI & Humanoid Robotics`}
+      description="A comprehensive guide to physical AI, humanoid robotics, and advanced AI systems">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,23 +1,86 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.heroSection {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/img/hero-sec.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  color: #ffffff; /* Set text color for all children */
 }
 
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.heroContent h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.heroContent p {
+  font-size: 1.4rem;
+  font-weight: 500; /* Slightly bolder */
+  opacity: 0.9;
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif; /* Premium, high-quality font */
+}
+
+.tutorialBadge {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.tutorialBadge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+  border-color: rgba(255, 255, 255, 0.8); /* Make border slightly brighter */
+}
+
+/* --- Responsive Adjustments --- */
+
+/* For Tablets */
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .heroContent h1 {
+    font-size: 3.5rem; /* Scale down heading */
+  }
+
+  .heroContent p {
+    font-size: 1.2rem; /* Scale down subtitle */
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* For Mobile Phones */
+@media screen and (max-width: 480px) {
+  .heroSection {
+    padding: 0 3%; /* Adjust padding for smaller screens */
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem; /* Further scale down heading */
+  }
+
+  .heroContent p {
+    font-size: 1rem; /* Further scale down subtitle */
+  }
+
+  .tutorialBadge {
+    font-size: 0.8rem; /* Adjust badge font size */
+    padding: 6px 12px; /* Adjust badge padding */
+  }
 }
